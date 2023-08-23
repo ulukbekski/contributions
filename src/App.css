@@ -1,38 +1,113 @@
-.App {
+*{
+  background: white;
+  padding: 0;
+  margin: 0;
+  color: #959494;
+  font-size: 12px;
+}
+body{
+  background-color: gray !important;
+}
+.modal{
+  position: absolute;
+  width: 145px;
+  height: 48px;
+  display: block;
+  background-color: black;
+  z-index: 100;
+  bottom: 23px;
+  left: -66px;
+  margin: auto;
+  border-radius: 3px;
+  
+}
+.modal::before{
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: black;
+  transform: rotate(45deg);
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.modal * {
+  background-color: black;
+  color:white;
   text-align: center;
+  
+}
+.modal p{
+  font-size: 10px;
+  color: #7C7C7C;
+}
+.modal h4{
+  border-radius: 3px;
+  margin: 7px;
+  font-size: 12px;
+}
+.box{
+  width: 15px;
+  height: 15px;
+  border: 1px solid white;
+  position: relative;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box:hover{
+  border: 1px solid #00000080
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gray{
+  background: #EDEDED;
 }
+.lightBlue{
+  background-color: #ACD5F2;
+}
+.blue{
+  background-color: #7FA8C9;
+}
+.darkBlue{
+  background-color: #527BA0;
+}
+.darkerBlue{
+  background-color: #254E77;
+}
+.App{
+  position: relative;
+  padding: 50px 0 ;
+  height: 279px;
+}
+.grid-wrapper{
+  position: relative;
+  width: fit-content;
+  margin: auto;
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.months{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  width: 830px;
+  justify-content: space-around;
+  margin: 0 auto;
+
+}
+.months li{
+  padding: 5px 0px;
+}
+.flex{
+  display: flex;
+}
+.weeks{
+  list-style: none;
 }
 
-.App-link {
-  color: #61dafb;
+.weeks li{
+  padding: 0 4px;
+  padding-bottom: 19px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.borders{
+  border: 1px solid #000000E5
 }
