@@ -1,12 +1,12 @@
 *{
-  background: white;
+
   padding: 0;
   margin: 0;
   color: #959494;
   font-size: 12px;
 }
 body{
-  background-color: gray !important;
+  background-color: white !important;
 }
 .modal{
   position: absolute;
@@ -55,6 +55,9 @@ body{
   position: relative;
 
 }
+.transparent{
+  opacity: 0;
+}
 
 .box:hover{
   border: 1px solid #00000080
@@ -77,8 +80,10 @@ body{
 }
 .App{
   position: relative;
-  padding: 50px 0 ;
-  height: 279px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+
 }
 .grid-wrapper{
   position: relative;
@@ -101,6 +106,7 @@ body{
   display: flex;
 }
 .weeks{
+  margin-top: 15px;
   list-style: none;
 }
 
@@ -110,4 +116,24 @@ body{
 }
 .borders{
   border: 1px solid #000000E5
+}
+
+.grid{
+  display: flex; /* 51 строка */
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120px;
+}
+.con{
+  border: 1px darkgray solid;
+  width: 950px;
+  border-radius: 10px 10px 0 0 ;
+  height: 180px;
+  padding-top: 40px;
+}
+.years{
+  display: flex;
+  justify-content: start;
+  flex-direction: column; 
+  padding:0  40px ;
 }
